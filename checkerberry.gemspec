@@ -35,6 +35,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rexml", "~> 3.3", ">= 3.3.6"
 
   s.add_runtime_dependency "faraday", "~> 2.2"
-  s.add_runtime_dependency "faraday-follow_redirects", ">= 0.1", "< 0.4"
+  s.add_runtime_dependency "faraday-follow_redirects", "~> 0.1"
   s.add_runtime_dependency "multi_json", "~> 1.15"
 end
