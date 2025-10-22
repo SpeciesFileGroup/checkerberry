@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://verifier.globalnames.org/api/v1/version
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v2.14.0 Checkerberry/v0.0.1
+      Accept:
+      - application/json
+      X-User-Agent:
+      - Faraday/v2.14.0 Checkerberry/v0.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Wed, 22 Oct 2025 19:23:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '54'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"version":"v1.5.0","build":"2025-09-30_17:43:40UTC"}
+
+        '
+  recorded_at: Wed, 22 Oct 2025 19:23:38 GMT
+recorded_with: VCR 6.3.1
