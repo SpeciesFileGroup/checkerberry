@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://verifier.globalnames.org/api/v1/verifications
+    body:
+      encoding: UTF-8
+      string: '{"names":["Homo sapiens"]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.0 Checkerberry v0.1.0
+      X-User-Agent:
+      - Faraday v2.14.0 Checkerberry v0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"names":[{"inputId":"","input":"Homo sapiens","matchType":"Exact","bestResult":{"dataSourceId":1,"dataSourceTitle":"Catalogue
+        of Life","taxonId":"6W6RY","matchedName":"Homo sapiens","matchedCanonicalSimple":"Homo
+        sapiens","matchedCanonicalFull":"Homo sapiens","currentName":"Homo sapiens","currentCanonicalSimple":"Homo
+        sapiens","currentCanonicalFull":"Homo sapiens","synonym":false,"classificationPath":"Biota|Animalia|Chordata|Mammalia|Primates|Hominidae|Homo","classificationRanks":"unranked|kingdom|phylum|class|order|family|genus","editDistance":0,"stemEditDistance":0,"matchedWords":"2/2"}}]}'
+    http_version: 
+  recorded_at: Mon, 22 Oct 2025 16:00:00 GMT
+recorded_with: VCR 6.3.1

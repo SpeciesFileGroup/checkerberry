@@ -1,0 +1,29 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://verifier.globalnames.org/api/v1/data_sources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.0 Checkerberry v0.1.0
+      X-User-Agent:
+      - Faraday v2.14.0 Checkerberry v0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"title":"Catalogue of Life","titleShort":"COL","description":"Species
+        2000 & ITIS Catalogue of Life","websiteURL":"http://www.catalogueoflife.org","dataURL":"http://www.catalogueoflife.org/DCA_Export/archive-ridae2013.zip","outlink":"http://www.catalogueoflife.org/col/details/species/id/{record_id}","curation":"Curated","recordCount":1696000,"updatedAt":"2024-01-15T00:00:00Z"}]'
+    http_version: 
+  recorded_at: Mon, 22 Oct 2025 16:00:00 GMT
+recorded_with: VCR 6.3.1

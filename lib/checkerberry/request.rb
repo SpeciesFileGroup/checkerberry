@@ -2,6 +2,7 @@ require_relative "faraday"
 require "faraday/follow_redirects"
 require_relative "utils"
 require "checkerberry/error"
+require "multi_json"
 
 module Checkerberry
   class Request

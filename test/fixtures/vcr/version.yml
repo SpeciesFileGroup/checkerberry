@@ -1,0 +1,28 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://verifier.globalnames.org/api/v1/version
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.0 Checkerberry v0.1.0
+      X-User-Agent:
+      - Faraday v2.14.0 Checkerberry v0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"version":"1.0.0","build":"2024-01-15"}'
+    http_version: 
+  recorded_at: Mon, 22 Oct 2025 16:00:00 GMT
+recorded_with: VCR 6.3.1
