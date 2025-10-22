@@ -5,8 +5,8 @@ require_relative "lib/checkerberry/version"
 Gem::Specification.new do |s|
   s.name          = "checkerberry"
   s.version       = Checkerberry::VERSION
-  s.authors       = ["Matt Yoder, Geoff Ower"]
-  s.email         = ["diapriid@gmail.com"]
+  s.authors       = ["Geoff Ower"]
+  s.email         = ["gdower@illinois.edu"]
 
   s.summary       = "GNverifier API Client"
   s.description   = "checkerberry is a low-level wrapper around the GNverifier API for scientific name verification."

@@ -7,7 +7,7 @@ class VersionTest < Test::Unit::TestCase
     VCR.use_cassette('version') do
       result = Checkerberry.version
       assert_not_nil result
-      assert result.is_a?(Hash) || result.is_a?(String)
+      assert_match(/^v\d+\.\d+\.\d+$/, result['version']) 
     end
   end
 end

@@ -7,7 +7,9 @@ class DataSourcesTest < Test::Unit::TestCase
     VCR.use_cassette('data_sources') do
       result = Checkerberry.data_sources
       assert_not_nil result
-      assert result.is_a?(Array) || result.is_a?(Hash)
+      assert_operator result.length, :>, 0
+      assert_equal result[0]['id'], 1
+      assert_equal result[0]['title'], "Catalogue of Life"
     end
   end
 end
